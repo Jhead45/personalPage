@@ -1,0 +1,122 @@
+body {
+    background-color: black;
+}
+
+.homeContainer {
+    display: flex;
+    height: 500px;
+    flex-wrap: nowrap;
+    background-color: #dae0e5;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 0%;
+    border: 1px;
+}
+
+
+.appContainer {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#homeNav {
+    width: 100%;
+    border: 1px;
+    flex-shrink: 1;
+    word-wrap: break-word;
+}
+
+.title {
+    margin-top: 5px;
+    font-weight: 700;
+    color: #e16139;
+    flex-shrink: 1;
+}
+
+.buttonGroup {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    /* min-width: 200px; */
+    border: 1px solid black;
+} 
+
+.vBtn {
+    border: 1px solid black;
+    border-radius: 0%;
+}
+
+.vBtn2 {
+    border: 1px solid black;
+    border-radius: 0%;
+    min-height: 75px;
+}
+
+.contactForm {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    border: 1px;
+}
+
+#contactFormColor {
+    background-color: #dae0e5;
+}
+
+.btnGroup2 {
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row;
+    min-width: 200px;
+    border: 1px solid black;
+} 
+
+.myColor {
+    color: #e16139;
+}
+
+.projectBox {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    
+
+    
+
+}
+
+.divProject {
+    display: flex;
+    flex-direction: column;
+    word-break: keep-all;
+    align-self: center;
+    max-width: 30%;
+    overflow: auto;
+}
+
+.projectImg {
+    border: 2px solid black;
+    max-width: 70%;
+}
+
+.indent {
+    text-indent: 30%
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+  
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
+  }
