@@ -14,10 +14,13 @@ class App extends Component {
         return (
             <Router>
                 <Fragment>
-                    
-                        <div>
-                            <h1 className="display-3 text-center title">Justin Head</h1>
-                            <div className="appContainer">
+
+                        <div className='container'>
+                            <div className='row'>
+                            <h1 className="display-1 text-center title col-sm-12">Justin Head</h1>
+                            </div>
+                            <div className='row'>
+                            <div className=" col-md-12">
                                 <nav className="navbar navbar-dark bg-dark mb-0 h-100" id="homeNav">
                                 <Link className="btn btn-dark btn-lg mt-3 ml-2 text-white" to="/">Home</Link>
                                 <Link className="btn btn-dark btn-lg mt-3 ml-2 text-white" to="/skills">Skills</Link>
@@ -26,7 +29,8 @@ class App extends Component {
                                 <Link className="btn btn-dark btn-lg mt-3 ml-2 text-white" to="/freelance">Freelance</Link>
                                 </nav>
                             </div>
-                        </div>
+                            </div>
+                        
                           
                     
                     <Switch>
@@ -36,6 +40,7 @@ class App extends Component {
                         <Route exact path="/contact" component={Contact} />
                         <Route exact path="/freelance" component={Freelance} />
                     </Switch>
+                    </div>
                 </Fragment>
             </Router>
         )

@@ -1,10 +1,10 @@
 import { Router } from 'express';
-// import classesRouter from './classes';
+import jobRouter from './jobs';
 
 let router = Router();
 
 
 
-// router.use('/classes', classesRouter);
+router.use('/jobs', jobRouter);
 
 export default router;

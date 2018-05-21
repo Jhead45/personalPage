@@ -13,13 +13,14 @@ class Home extends Component {
     render() {
         return(           
         
-        <div className="homeContainer">
-            <div className='flex-column justify-content-center align-self-center w-100'>
+        <div className="container">
+            <div className='row displayColor theBox'>
+                <div className='col-md-6 d-flex justify-content-center flex-column align-items-center '>
                 <h1 className='display-3 myColor text-center'>Full Stack<br />Developer</h1>
             </div>
-            <div className='flex-column justify-content-center align-items-center w-100'>
-            <img src={headshot} className='w-100 h-100' />
-
+            <div className='col-md-6 d-flex justify-content-center align-items-center'>
+            <img src={headshot} className='w-100 h-100 projectImg' />
+            </div>
             </div>
         </div>)
     }

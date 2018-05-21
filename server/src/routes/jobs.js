@@ -1,14 +1,14 @@
-// import { Router } from 'express';
-// import Table from '../table';
+import { Router } from 'express';
+import Table from '../table';
 
 let router = Router();
-let classTable = new Table('Classes');
+let jobTable = new Table('FreeLance');
 
 router.get('/', async (req, res) => {
     console.log(req.user);
     try {
-        let classes = await classTable.getAll()
-        res.json(classes);
+        let jobs = await jobTable.getAll()
+        res.json(job);
     } catch (err) {
         console.log(err);
         res.sendStatus(500);
@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res) => {
     try {
         // idObj will look like { id: 7 }
-        let idObj = await classTable.insert({
+        let idObj = await jobTable.insert({
             name: req.body.name,
             description: req.body.description
         });
@@ -31,10 +31,13 @@ router.post('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
     try {
-        let foundClass = await classTable.getOne(req.params.id);
-        res.json(foundClass);
+        let foundJob = await jobTable.getOne(req.params.id);
+        res.json(foundJob);
+        console.log(foundJob);
+        console.log('in the router');
     } catch (err) {
         console.log(err);
+        console.log('didnt work');
         res.sendStatus(500);
     }
 });
@@ -42,7 +45,7 @@ router.get('/:id', async (req, res) => {
 router.put('/:id', async (req, res) => {
     try {
         // not concerned about getting a value back, just waiting on update to finish
-        await classTable.update(req.params.id, req.body);
+        await jobTable.update(req.params.id, req.body);
         res.sendStatus(200);
     } catch (err) {
         console.log(err);
@@ -53,7 +56,7 @@ router.put('/:id', async (req, res) => {
 router.delete('/:id', async (req, res) => {
     try {
         // not concerned about getting a value back, just waiting on delete to finish
-        await classTable.delete(req.params.id);
+        await jobTable.delete(req.params.id);
         res.sendStatus(200);
     } catch (err) {
         console.log(err);
@@ -61,4 +64,4 @@ router.delete('/:id', async (req, res) => {
     }
 });
 
-// export default router;
+export default router;

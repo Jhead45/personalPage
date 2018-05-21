@@ -1,11 +1,11 @@
-// import mysql from 'mysql';
+import mysql from 'mysql';
 
 let pool = mysql.createPool({
     connectionLimit: 10,
     host: 'localhost',
-    user: 'exampleUser',
+    user: 'Personal',
     password: 'password',
-    database: 'InClassExample'
+    database: 'BioSite'
 });
 
 async function executeQuery(sql, args = []) {
@@ -72,4 +72,4 @@ function sendQueryToDB(connection, sql, args = []) {
     });
 }
 
-// export { row, rows, empty, executeQuery, generatePlaceholders };
+export { row, rows, empty, executeQuery, generatePlaceholders };

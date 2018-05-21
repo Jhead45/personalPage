@@ -7,8 +7,9 @@ console.log(props.value);
     switch(props.value) {
         case 'languages':
             return(
-            <div>
-                <h1>Languages</h1>
+            <div className='col-sm-10 myColor d-flex flex-column h-100'>
+                <div className='d-flex flex-column justify-content-center align-items-center h-100'>
+                <h1 className='display-4'>Languages</h1>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -49,12 +50,15 @@ console.log(props.value);
                         </div>
                     </div>
                     </div>
+                    </div>
             </div>)
             break;
         case 'frameworks':
                 return(
-                <div>
-                    <h1>Libraries & Frameworks</h1>
+                <div className='col-sm-10 myColor d-flex flex-column h-100'>
+                <div className='d-flex flex-column justify-content-center align-items-center h-100'>
+
+                    <h1 className='display-4'>Libraries & Frameworks</h1>
                     <ul>
                         <li>Bootstrap</li>
                         <li>JQuery</li>
@@ -91,13 +95,16 @@ console.log(props.value);
                         </div>
                     </div>
                     </div>
+                    </div>
 
                                     </div>)
             break;
         case 'concepts':
                 return(
-                    <div>
-                    <h1>Concepts</h1>
+                    <div className='col-sm-10 myColor d-flex flex-column h-100'>
+                                    <div className='d-flex flex-column justify-content-center align-items-center h-100'>
+
+                    <h1 className='display-4'>Concepts</h1>
                     <ul>
                         <li>DOM / Document Object Model</li>
                         <li>Object-Oriented Programing</li>
@@ -142,12 +149,15 @@ console.log(props.value);
                         </div>
                     </div>
                     </div>
+                    </div>
                 </div>)
             break;
         case 'databases':
                     return(
-                    <div>
-                    <h1>Databases</h1>
+                    <div className='col-sm-10 myColor d-flex flex-column h-100'>
+                                    <div className='d-flex flex-column justify-content-center align-items-center h-100'>
+
+                    <h1 className='display-4'>Databases</h1>
                     <ul>
                         <li>SQL / MySQL</li>
                         <li>NoSQL / MongoDB</li>
@@ -185,13 +195,15 @@ console.log(props.value);
                         </div>
                     </div>
                     </div>
-                    
+                    </div>
                 </div>)
             break;
         case 'methods':
                     return(
-                    <div>
-                    <h1>Software Development Methodologies</h1>
+                    <div className='col-sm-10 myColor d-flex flex-column h-100'>
+                                    <div className='d-flex flex-column justify-content-center align-items-center h-100'>
+
+                    <h1 className='display-4 text-center'>Software Development Methodologies</h1>
                     <ul>
                         <li>Agile</li>
                         <li>Scrum</li>
@@ -227,12 +239,15 @@ console.log(props.value);
                         </div>
                     </div>
                     </div>
+                    </div>
                 </div>)       
             break;
         case 'environments':
                 return(
-                <div>
-                <h1>Development Environments</h1>
+                <div className='col-sm-10 myColor d-flex flex-column h-100'>
+                                <div className='d-flex flex-column justify-content-center align-items-center h-100'>
+
+                <h1 className='display-4 text-center'>Development Environments</h1>
                 <ul>
                     <li>Heroku</li>
                     <li>Amazon Web Services (AWS)</li>
@@ -266,12 +281,16 @@ console.log(props.value);
                         </div>
                     </div>
                     </div>
+                    </div>
             </div>)       
         break;
         default:
                 return(
-                    <div>
-                        <h1>Click Section to View Skills.</h1>
+                    <div className='col-sm-10 myColor d-flex flex-column h-100'>
+                                    <div className='d-flex flex-column justify-content-center align-items-center h-100'>
+
+                        <h1 className='display-4'>Click Section to View Skills.</h1>
+                        </div>
                     </div>)
     }
 

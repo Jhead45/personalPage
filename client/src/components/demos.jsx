@@ -15,16 +15,16 @@ class Demos extends Component {
 
         render() {
         return (
-            <div className='homeContainer'>
-                <div className="btn-group-vertical buttonGroup h-100" role="group" aria-label="Basic example">
+            <div className='container'>
+                <div className='row displayColor theBox '>
+                <div className="btn-group-vertical col-md-2 pl-0" role="group" aria-label="Basic example">
                     <button type="button" className="btn btn-secondary h-100 vBtn"
                     onClick={() => this.handleClick('Blog Spot!')}>Blog Spot!</button>
-                    <button type="button" className="btn btn-secondary h-100 vBtn"
+                    <button type="button" className="btn btn-secondary h-100 vBtn "
                     onClick={() => this.handleClick('Chirper!')}>Chirper!</button>
-                    <button type="button" className="btn btn-secondary h-100 vBtn"
+                    <button type="button" className="btn btn-secondary h-100 vBtn" id='sideNav'
                     onClick={() => this.handleClick('Coming Soon!')}>Coming Soon!</button>
                 </div>
-                <div>
                     <DemoDisplay value={this.state.demos}/>
                 </div>
             </div>

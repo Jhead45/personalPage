@@ -37,9 +37,15 @@ class Contact extends Component {
 
     render() {
         return (
-            <div className='homeContainer flex-column justify-content-center align-items-center mb-0' id='contactFormColor'>
-                <h1 className='display-3 text-center mb-0'>Contact Me</h1>
-                <form className='w-100 d-flex flex-column justify-content-end contactForm mb-0 h-100' onSubmit={ (e) => this.handleSubmit(e) }>
+        <div className='container mb-0 displayColor theBox' id=''>
+            <div className='row'>
+                <div className="col-md-12 text-center">
+                    <h1 className='display-3 mb-0 myColor'>Contact Me</h1>
+                </div>
+            </div>
+            <div className='row contactForm'>
+                <div className="col-md-12">
+                <form className='w-100 mb-0' onSubmit={ (e) => this.handleSubmit(e) }>
                     <div className='form-group mt-0 mb-0'>
                         <input onChange={ (e)  => this.handleName(e.target.value)} placeholder='Name' id='name' type='text' className='form-control h-100 ' required />
                     </div>
@@ -49,9 +55,11 @@ class Contact extends Component {
                     <div className='form-group mb-0'>
                         <textarea onChange={ (e)  => this.handleMessage(e.target.value)} cols='30' rows='12' className='form-control h-100 '></textarea>    
                     </div>
-                    <input type='submit' className='btn-block btn-primary mt-0 mb-0 border-2 border-dark h-25' />
+                    <input type='submit' className='btn-block btn-primary mt-0 mb-0 border-2 border-dark' />
                 </form>
+                </div>
             </div>
+        </div>
 
         )
     }

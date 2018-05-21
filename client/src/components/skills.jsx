@@ -19,8 +19,9 @@ class Skills extends Component {
             console.log(this.state);
         return (
 
-            <div className="homeContainer">
-            <div className="btn-group-vertical buttonGroup h-100" role="group" aria-label="Basic example">
+            <div className="container">
+            <div className='row displayColor theBox'>
+            <div className="btn-group-vertical col-sm-2 pl-0"  role="group" aria-label="Basic example">
                     <button type="button" className="btn btn-secondary h-100 vBtn" value='languages' 
                         onClick={() => this.handleClick('languages')}>Languages</button>
                     <button type="button" className="btn btn-secondary h-100 vBtn" value='framework' 
@@ -31,16 +32,17 @@ class Skills extends Component {
                         onClick={() => this.handleClick('databases')}>Databases</button>
                     <button type="button" className="btn btn-secondary h-100 vBtn" value='methods' 
                         onClick={() => this.handleClick('methods')}>Development <br /> Methodologies</button>
-                    <button type="button" className="btn btn-secondary h-100 vBtn" value='environments' 
+                    <button type="button" className="btn btn-secondary h-100 vBtn" id='sideNav' value='environments' 
                         onClick={() => this.handleClick('environments')}>Development<br /> Environments</button>
 
-
                 </div>
 
-               
-                <div>
+              
+                <div className='col-sm-10'>
                     <SkillDisplay value={this.state.skills}/>
                 </div>
+                </div>
+
             </div>
      
                
