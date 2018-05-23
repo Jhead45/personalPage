@@ -1,11 +1,12 @@
 import mysql from 'mysql';
+import config from '../config';
 
 let pool = mysql.createPool({
     connectionLimit: 10,
-    host: 'localhost',
-    user: 'Personal',
-    password: 'password',
-    database: 'BioSite'
+    host: config.DB_HOST,
+    user: config.DB_USER,
+    password: config.DB_PASSWORD,
+    database: config.DATABASE
 });
 
 async function executeQuery(sql, args = []) {
