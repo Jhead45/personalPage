@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { Link } from 'react-router-dom';
-import headshot from '../images/headshot.png';
+import profile from '../images/profile.png';
 
 class Home extends Component {
     constructor(props) {
@@ -19,8 +19,8 @@ class Home extends Component {
                     </div>
                     <div className="col-md-6 d-flex justify-content-center align-items-center">
                         <img
-                            src={headshot}
-                            className="w-100 h-100 projectImg"
+                            src={profile}
+                            className="w-100 h-100 projectImg2"
                         />
                     </div>
                 </div>
