@@ -8,7 +8,7 @@ function charge(token, amt) {
         amount: amt * 100, //amount in cents
         currency: 'usd',
         source: token,
-        description: 'Statement description'
+        description: 'payment for freelance services'
     });
 };
 

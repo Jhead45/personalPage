@@ -123,6 +123,7 @@ body {
 #aBox {
     border-radius: 50px 50px 50px 50px;
     box-shadow: 10px 10px 20px 7px rgb(128,128,128,0.75);
+    margin-bottom: 20px;
         
     
 }

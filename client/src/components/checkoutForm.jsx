@@ -29,7 +29,7 @@ class CheckoutForm extends Component {
     render() {
             console.log(this.props.value);
         return (
-            <div className='row theBox2 fullWidth mt-5 ml-5 mr-5'>
+            <div className='row theBox2 fullWidth pt-2 pb-3 ml-5 mr-5'>
             <div className='col-md-12'>
             <div className='d-flex flex-column justify-content-center align-items-center mt-0 removePadding w-100'>
             <table className="table table-striped table-sm-responsive displayColor2 addBorders mb-0 w-100">
