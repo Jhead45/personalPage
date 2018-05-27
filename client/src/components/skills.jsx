@@ -21,7 +21,7 @@ class Skills extends Component {
 
             <div className="container">
             <div className='row displayColor theBox'>
-            <div className="btn-group-vertical col-sm-2 pl-0"  role="group" aria-label="Basic example">
+            <div className="btn-group-vertical col-md-2 pr-0 pl-0"  role="group" aria-label="Basic example">
                     <button type="button" className="btn btn-secondary h-100 vBtn" value='languages' 
                         onClick={() => this.handleClick('languages')}>Languages</button>
                     <button type="button" className="btn btn-secondary h-100 vBtn" value='framework' 

@@ -13,14 +13,14 @@ class Home extends Component {
             <div className="container">
                 <div className="row displayColor theBox">
                     <div className="col-md-6 d-flex justify-content-center flex-column align-items-center ">
-                        <h1 className="display-3 myColor text-center">
+                        <h1 className="display-4 myColor text-center" id='secondTitle'>
                             Full Stack<br />Developer
                         </h1>
                     </div>
                     <div className="col-md-6 d-flex justify-content-center align-items-center">
                         <img
                             src={profile}
-                            className="w-100 h-100 projectImg2"
+                            className="w-100 h-100 projectImg2 mb-5"
                         />
                     </div>
                 </div>

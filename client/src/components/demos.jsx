@@ -17,7 +17,7 @@ class Demos extends Component {
         return (
             <div className='container'>
                 <div className='row displayColor theBox '>
-                <div className="btn-group-vertical col-md-2 pl-0" role="group" aria-label="Basic example">
+                <div className="btn-group-vertical col-md-2 pr-0 pl-0" role="group" aria-label="Basic example">
                     <button type="button" className="btn btn-secondary h-100 vBtn"
                     onClick={() => this.handleClick('Blog Spot!')}>Blog Spot!</button>
                     <button type="button" className="btn btn-secondary h-100 vBtn "

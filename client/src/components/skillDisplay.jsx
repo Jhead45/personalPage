@@ -7,14 +7,14 @@ const SkillDisplay = (props) => {
     switch (props.value) {
         case 'languages':
             return (
-                <div className="col-sm-10 myColor d-flex flex-column h-100">
+                <div className="col-md-10 myColor d-flex flex-column h-100">
                     <div className="d-flex flex-column justify-content-center align-items-center h-100">
-                        <h1 className="display-4">Languages</h1>
+                        <h1 className="display-3">Languages</h1>
                         <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>ES6 / ECMAScript 5</li>
+                            <li><h2>HTML</h2></li>
+                            <li><h2>CSS</h2></li>
+                            <li><h2>JavaScript</h2></li>
+                            <li><h2>ES6 / ECMAScript 5</h2></li>
                         </ul>
                         <button
                             type="button"
@@ -101,15 +101,15 @@ const SkillDisplay = (props) => {
             break;
         case 'frameworks':
             return (
-                <div className="col-sm-10 myColor d-flex flex-column h-100">
+                <div className="col-md-10 myColor d-flex flex-column h-100">
                     <div className="d-flex flex-column justify-content-center align-items-center h-100">
-                        <h1 className="display-4">Libraries & Frameworks</h1>
+                        <h1 className="display-3 text-center">Libraries<br /> & Frameworks</h1>
                         <ul>
-                            <li>Bootstrap</li>
-                            <li>JQuery</li>
-                            <li>ReactJS</li>
-                            <li>Node.Js & Express</li>
-                            <li>React Native</li>
+                            <li><h2>Bootstrap</h2></li>
+                            <li><h2>JQuery</h2></li>
+                            <li><h2>ReactJS</h2></li>
+                            <li><h2>Node.Js & Express</h2></li>
+                            <li><h2>React Native</h2></li>
                         </ul>
                         <button
                             type="button"
@@ -186,14 +186,14 @@ const SkillDisplay = (props) => {
             break;
         case 'concepts':
             return (
-                <div className="col-sm-10 myColor d-flex flex-column h-100">
+                <div className="col-md-10 myColor d-flex flex-column h-100">
                     <div className="d-flex flex-column justify-content-center align-items-center h-100">
-                        <h1 className="display-4">Concepts</h1>
+                        <h1 className="display-2">Concepts</h1>
                         <ul>
-                            <li>DOM / Document Object Model</li>
-                            <li>Object-Oriented Programing</li>
-                            <li>REST / CRUD</li>
-                            <li>User Authentication & Authorization</li>
+                            <li><h2>DOM / Document Object Model</h2></li>
+                            <li><h2>Object-Oriented Programing</h2></li>
+                            <li><h2>REST / CRUD</h2></li>
+                            <li><h2>User Authentication & Authorization</h2></li>
                         </ul>
                         <button
                             type="button"
@@ -294,13 +294,13 @@ const SkillDisplay = (props) => {
             break;
         case 'databases':
             return (
-                <div className="col-sm-10 myColor d-flex flex-column h-100">
+                <div className="col-md-10 myColor d-flex flex-column h-100">
                     <div className="d-flex flex-column justify-content-center align-items-center h-100">
-                        <h1 className="display-4">Databases</h1>
+                        <h1 className="display-2">Databases</h1>
                         <ul>
-                            <li>SQL / MySQL</li>
-                            <li>NoSQL / MongoDB</li>
-                            <li>Transact-SQL</li>
+                            <li><h1>SQL / MySQL</h1></li>
+                            <li><h1>NoSQL / MongoDB</h1></li>
+                            <li><h1>Transact-SQL</h1></li>
                         </ul>
                         <button
                             type="button"
@@ -392,14 +392,14 @@ const SkillDisplay = (props) => {
             break;
         case 'methods':
             return (
-                <div className="col-sm-10 myColor d-flex flex-column h-100">
+                <div className="col-md-10 myColor d-flex flex-column h-100">
                     <div className="d-flex flex-column justify-content-center align-items-center h-100">
                         <h1 className="display-4 text-center">
                             Software Development Methodologies
                         </h1>
                         <ul>
-                            <li>Agile</li>
-                            <li>Scrum</li>
+                            <li><h2>Agile</h2></li>
+                            <li><h2>Scrum</h2></li>
                         </ul>
                         <button
                             type="button"
@@ -478,14 +478,14 @@ const SkillDisplay = (props) => {
             break;
         case 'environments':
             return (
-                <div className="col-sm-10 myColor d-flex flex-column h-100">
+                <div className="col-md-10 myColor d-flex flex-column h-100">
                     <div className="d-flex flex-column justify-content-center align-items-center h-100">
-                        <h1 className="display-4 text-center">
+                        <h1 className="display-3 text-center">
                             Development Environments
                         </h1>
                         <ul>
-                            <li>Heroku</li>
-                            <li>Amazon Web Services (AWS)</li>
+                            <li><h2>Heroku</h2></li>
+                            <li><h2>Amazon Web Services (AWS)</h2></li>
                         </ul>
                         <button
                             type="button"
@@ -559,9 +559,9 @@ const SkillDisplay = (props) => {
             break;
         default:
             return (
-                <div className="col-sm-10 myColor d-flex flex-column h-100">
+                <div className="col-md-10 myColor d-flex flex-column h-100">
                     <div className="d-flex flex-column justify-content-center align-items-center h-100">
-                        <h1 className="display-4">
+                        <h1 className="display-4 text-center">
                             Click Section to View Skills.
                         </h1>
                     </div>

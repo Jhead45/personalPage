@@ -71,7 +71,7 @@ const DemoDisplay = (props) => {
             return (
                 <Fragment>
                     <div className="col-md-10 myColor d-flex justify-content-center align-items-center">
-                        <h1 className="w-100">
+                        <h1 className="w-100 text-center">
                             Click Section to View Previous Projects.
                         </h1>
                     </div>
