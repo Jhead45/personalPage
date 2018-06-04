@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { sendContactEmail } from '../services/contact';
+import { sendContactEmail } from '../services/contact';
 
 class Contact extends Component {
 
@@ -24,16 +24,16 @@ class Contact extends Component {
         this.setState({ message });
     }
 
-    // handleSubmit(e) {
-    //     e.preventDefault();
-    //     sendContactEmail(this.state.name, this.state.email, this.state.message)
-    //     .then(() => {
-    //         // redirect to homepage
-    //         this.props.history.push('/');
-    //     }).catch((err) => {
-    //         console.log(err);
-    //     })
-    // }
+    handleSubmit(e) {
+        e.preventDefault();
+        sendContactEmail(this.state.name, this.state.email, this.state.message)
+        .then(() => {
+            // redirect to homepage
+            this.props.history.push('/');
+        }).catch((err) => {
+            console.log(err);
+        })
+    }
 
     render() {
         return (
