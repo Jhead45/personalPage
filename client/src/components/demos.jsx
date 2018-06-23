@@ -23,7 +23,7 @@ class Demos extends Component {
                     <button type="button" className="btn btn-secondary h-100 vBtn "
                     onClick={() => this.handleClick('Chirper!')}>Chirper!</button>
                     <button type="button" className="btn btn-secondary h-100 vBtn" id='sideNav'
-                    onClick={() => this.handleClick('Coming Soon!')}>Coming Soon!</button>
+                    onClick={() => this.handleClick('Jelly Drop')}>Jelly Drop</button>
                 </div>
                     <DemoDisplay value={this.state.demos}/>
                 </div>

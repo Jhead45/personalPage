@@ -299,8 +299,7 @@ const SkillDisplay = (props) => {
                         <h1 className="display-2">Databases</h1>
                         <ul>
                             <li><h1>SQL / MySQL</h1></li>
-                            <li><h1>NoSQL / MongoDB</h1></li>
-                            <li><h1>Transact-SQL</h1></li>
+                      
                         </ul>
                         <button
                             type="button"
@@ -348,32 +347,7 @@ const SkillDisplay = (props) => {
                                             based on Structured Query Language
                                         </p>{' '}
                                         <br />
-                                        NoSQL / MongoDB - <br />
-                                        <p>
-                                            NoSQL is a non-relational database
-                                            that stores and accesses data using
-                                            key-values. Instead of storing data
-                                            in rows and columns like a
-                                            traditional database, a NoSQL DBMS
-                                            stores each item individually with a
-                                            unique key.MongoDB is a
-                                            cross-platform and open-source
-                                            document-oriented database, a kind
-                                            of NoSQL database.
-                                        </p>
-                                        <br />
-                                        Transact-SQL - <br />
-                                        <p>
-                                            T-SQL (Transact-SQL) is a set of
-                                            programming extensions from Sybase
-                                            and Microsoft that add several
-                                            features to the Structured Query
-                                            Language (SQL), including
-                                            transaction control, exception and
-                                            error handling, row processing and
-                                            declared variables.
-                                        </p>
-                                        <br />
+                
                                     </div>
                                     <div className="modal-footer">
                                         <button
@@ -485,7 +459,6 @@ const SkillDisplay = (props) => {
                         </h1>
                         <ul>
                             <li><h2>Heroku</h2></li>
-                            <li><h2>Amazon Web Services (AWS)</h2></li>
                         </ul>
                         <button
                             type="button"
@@ -529,16 +502,6 @@ const SkillDisplay = (props) => {
                                             way to go from idea to URL,
                                             bypassing all those infrastructure
                                             headaches.
-                                        </p>{' '}
-                                        <br />
-                                        Amazon Web Services - <br />
-                                        <p>
-                                            Amazon Web Services (AWS) is a
-                                            secure cloud services platform,
-                                            offering compute power, database
-                                            storage, content delivery and other
-                                            functionality to help businesses
-                                            scale and grow.
                                         </p>{' '}
                                         <br />
                                     </div>

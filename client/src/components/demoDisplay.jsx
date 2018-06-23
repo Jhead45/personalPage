@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import BlogSpot from '../images/BlogSpot.png';
 import Chirper from '../images/Chirper.png';
+import phonescreen from '../images/phonescreen.png';
 
 const DemoDisplay = (props) => {
     console.log(props.value);
@@ -64,8 +65,77 @@ const DemoDisplay = (props) => {
                 </Fragment>
             );
             break;
-        case 'Coming Soon!':
-            return <div />;
+        case 'Jelly Drop':
+            return (
+                <Fragment>
+                    <div className="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src={phonescreen} className="projectImg3" />
+                    </div>
+                    <div className=" col-md-4 myColor d-flex flex-column justify-content-center align-items-center">
+                        <h1>Jelly Drop</h1>
+                        <p>
+                            Jelly Drop is a mobile app game created with React
+                            Native, Node.JS, Express, and MySQL.
+                            This game allows users to drop and pick up "jelly
+                            beans" on a map and gain points. The points system
+                            is made up of various API routes to interact with
+                            the database scores. Scores and ranks are displayed
+                            on profile pages by using a variety of SQL queries
+                            and indexing through arrays. CRON jobs are set in
+                            the server to trigger daily, weekly, and monthly
+                            events for the game.
+                        </p>
+                        <br />
+                        <button
+                            type="button"
+                            className="btn btn-primary"
+                            data-toggle="modal"
+                            data-target="#exampleModal">
+                            Watch Interview
+                        </button>
+
+                        <div
+                            className="modal fade"
+                            id="exampleModal"
+                            tabIndex="-1"
+                            role="dialog"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div className="modal-dialog" role="document">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <h5
+                                            className="modal-title"
+                                            id="exampleModalLabel">
+                                            Jelly Drop Interview
+                                        </h5>
+                                        <button
+                                            type="button"
+                                            className="close"
+                                            data-dismiss="modal"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">
+                                                &times;
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div className="modal-body">
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/iklqWMsDH2I?start=656" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    </div>
+                                    <div className="modal-footer">
+                                        <button
+                                            type="button"
+                                            className="btn btn-secondary"
+                                            data-dismiss="modal">
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Fragment>
+            );
             break;
         default:
             return (
