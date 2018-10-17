@@ -8,7 +8,6 @@ import Contact from './contact';
 import News from './news';
 
 
-
 class App extends Component {
 
     render() {
