@@ -135,3 +135,34 @@ body {
         
     
 }
+
+#github {
+    height: 50px;
+    width: 50px;
+}
+
+#linkedin {
+    height: 50px;
+    width: 50px;
+}
+
+#covalence {
+    height: 71px;
+    width: 389px;
+}
+
+#sephp {
+    height: 163px;
+    width: 240px;
+}
+
+#septMeetup {
+    height: 215px;
+    width: 325px;
+}
+
+#octMeetup {
+    height: 364px;
+    width: 496px;
+    margin-bottom: 5px;
+}

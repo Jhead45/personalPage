@@ -17,7 +17,7 @@ const DemoDisplay = (props) => {
                     <div className=" col-md-4 myColor d-flex flex-column justify-content-center align-items-center">
                         <h1 className="">Blog Spot!</h1>
                         <p className="">
-                            This project was completed using ReactJS, NodeJS /
+                            This Boot Camp project was completed using ReactJS, NodeJS /
                             Express, and MySQL.<br />
                             This site will allow users to sign up and post
                             blogs. Guests and other users can all view the
@@ -46,7 +46,7 @@ const DemoDisplay = (props) => {
                     <div className=" col-md-4 myColor d-flex flex-column justify-content-center align-items-center">
                         <h1>Chirper!</h1>
                         <p>
-                            This project was completed using ReactJS, NodeJS /
+                            This Boot Camp project was completed using ReactJS, NodeJS /
                             Express, and MySQL.<br />
                             This site is set up to allow a certain people to
                             visit and leave chat messages to communicate. The

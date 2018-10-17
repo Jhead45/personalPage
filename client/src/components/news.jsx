@@ -1,16 +1,17 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 // import DemoDisplay from './demoDisplay';
+import NewsDisplay from './newsDisplay';
 
-class Demos extends Component {
+class News extends Component {
         constructor(props) {
             super(props);
-            this.state = { demos: '' };
+            this.state = { News: '' };
         }
 
 
         handleClick(value) {
-            this.setState({ demos: value });
+            this.setState({ News: value });
         }
 
         render() {
@@ -19,13 +20,15 @@ class Demos extends Component {
                 <div className='row displayColor theBox '>
                 <div className="btn-group-vertical col-md-2 pr-0 pl-0" role="group" aria-label="Basic example">
                     <button type="button" className="btn btn-secondary h-100 vBtn"
-                    onClick={() => this.handleClick('Blog Spot!')}>Blog Spot!</button>
-                    <button type="button" className="btn btn-secondary h-100 vBtn "
-                    onClick={() => this.handleClick('Chirper!')}>Chirper!</button>
+                    onClick={() => this.handleClick('October')}>October 2018</button>
+                    <button type="button" className="btn btn-secondary h-100 vBtn"
+                    onClick={() => this.handleClick('September')}>September 2018</button>
+                    <button type="button" className="btn btn-secondary h-100 vBtn"
+                    onClick={() => this.handleClick('August')}>August 2018</button>
                     <button type="button" className="btn btn-secondary h-100 vBtn" id='sideNav'
-                    onClick={() => this.handleClick('Jelly Drop')}>Jelly Drop</button>
+                    onClick={() => this.handleClick('June')}>June 2018</button>
                 </div>
-                    <DemoDisplay value={this.state.demos}/>
+                    <NewsDisplay value={this.state.News}/>
                 </div>
             </div>
         )
@@ -33,4 +36,4 @@ class Demos extends Component {
 }
 
 
-export default Demos;
+export default News;

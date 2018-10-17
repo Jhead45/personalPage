@@ -15,6 +15,7 @@ const SkillDisplay = (props) => {
                             <li><h2>CSS</h2></li>
                             <li><h2>JavaScript</h2></li>
                             <li><h2>ES6 / ECMAScript 5</h2></li>
+                            <li><h2>PHP</h2></li>
                         </ul>
                         <button
                             type="button"
@@ -37,7 +38,7 @@ const SkillDisplay = (props) => {
                                         <h5
                                             className="modal-title"
                                             id="exampleModalLabel">
-                                            Libraries & Frameworks
+                                            Languages
                                         </h5>
                                         <button
                                             type="button"
@@ -81,6 +82,11 @@ const SkillDisplay = (props) => {
                                             ES6 and ECMAScript 5 are versions of
                                             JavaScript that introduces new
                                             features and syntax.
+                                        </p>
+                                        <br />
+                                        PHP <br />
+                                        <p>
+                                            PHP stands for Hypertext Preprocessor. It is a open source scripting language for web development.
                                         </p>
                                         <br />
                                     </div>
@@ -194,6 +200,8 @@ const SkillDisplay = (props) => {
                             <li><h2>Object-Oriented Programing</h2></li>
                             <li><h2>REST / CRUD</h2></li>
                             <li><h2>User Authentication & Authorization</h2></li>
+                            <li><h2>Client URL</h2></li>
+                            <li><h2>CRON jobs</h2></li>
                         </ul>
                         <button
                             type="button"
@@ -273,7 +281,21 @@ const SkillDisplay = (props) => {
                                             human-to-machine transfer of
                                             credentials required for
                                             confirmation of a user’s
-                                            authenticity
+                                            authenticity.
+                                        </p>
+                                        <br />
+                                        cURL -
+                                        <br />
+                                        <p>
+                                            cURL stands for Client URL. It is a way that you can make http requests
+                                            that allows us to get or post data without an API. cURL is frequently used
+                                            in basic webscrapers.
+                                        </p>
+                                        <br />
+                                        CRON -
+                                        <br />
+                                        <p>
+                                            CRON is a unix based scheduler that allows someone to schedule tasks within a website or application. 
                                         </p>
                                         <br />
                                     </div>

@@ -4,7 +4,8 @@ import Home from './home';
 import Skills from './skills';
 import Demos from './demos';
 import Contact from './contact';
-import Freelance from './freelance';
+// import Freelance from './freelance';
+import News from './news';
 
 
 
@@ -26,8 +27,8 @@ class App extends Component {
                                 <Link className="btn btn-dark btn-lg mt-3 ml-2 text-white" to="/">Home</Link>
                                 <Link className="btn btn-dark btn-lg mt-3 ml-2 text-white" to="/skills">Skills</Link>
                                 <Link className="btn btn-dark btn-lg mt-3 ml-2 text-white" to="/demos">View Past Work</Link>
+                                <Link className="btn btn-dark btn-lg mt-3 ml-2 text-white" to="/news">News</Link>
                                 <Link className="btn btn-dark btn-lg mt-3 ml-2 text-white" to="/contact">Contact</Link>
-                                <Link className="btn btn-dark btn-lg mt-3 ml-2 text-white" to="/freelance">Freelance</Link>
                                 </nav>
                             </div>
                             </div>
@@ -39,7 +40,7 @@ class App extends Component {
                         <Route exact path="/skills" component={Skills} />
                         <Route exact path="/demos" component={Demos} />
                         <Route exact path="/contact" component={Contact} />
-                        <Route exact path="/freelance" component={Freelance} />
+                        <Route exact path="/news" component={News} />
                     </Switch>
                     </div>
                     </div>
