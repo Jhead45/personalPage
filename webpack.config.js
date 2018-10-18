@@ -1,8 +1,9 @@
+const path = require('path');
 
 const CLIENT_DEST = path.join(__dirname, './client/dist');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: ['babel-polyfill', './client/src/index.js'],
     output: { path: CLIENT_DEST, filename: 'bundle.js' },
     module: {
@@ -36,22 +37,6 @@ module.exports = {
                         outputPath: 'docs'
                     }
                 }
-            },
-            {
-                test: /\.css$/,
-                use: [
-                    { loader: "style-loader" },
-                    { loader: "css-loader" }
-                ]
-            },
-            {
-                test: /\.svg$/,
-                use: [
-                    "babel-loader",
-                    {
-                        loader: "react-svg-loader"
-                    }
-                ]
             }
         ]
     },

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Covalence from '../images/covalence.png';
 import Infiltrate from '../images/infiltrate.png';
 import SouthEastPHP from '../images/sephp.png';
-import SeptMeetup from '../images/meetup1.jpg';
 import OctMeetup from '../images/meetup2.jpg';
 
 
@@ -69,9 +68,7 @@ const NewsDisplay = (props) => {
                         <h1>September 8, 2018</h1>
                         <p>
                             Co-Founded and hosted first Covalence Nashville Meetup for Alumni and Students.
-                        </p>
-                        <a target="_blank" href={SeptMeetup}><img src={SeptMeetup} id="septMeetup" /></a>
-                        
+                        </p>                        
                     </div>
                 </Fragment>
             );
